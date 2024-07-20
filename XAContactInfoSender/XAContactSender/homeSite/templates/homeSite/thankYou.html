@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            padding: 50px;
+            font-family: helvetica;
+        }
+        ul {
+          list-style-type: none;
+        }
+        div{
+            padding: 10px;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        .sideMar1{
+            background-color: crimson;
+            width: 8%;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .sideMar2{
+            background-color: crimson;
+            width: 8%;
+            height: 100%;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .centerShad{
+            box-shadow: 0px 0px 20px 20px;
+            height: 100%;
+            width: 84%;
+            position: fixed;
+            top: 0px;
+            right: 8%;
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>
+        {%block title%}
+            Chi Alpha Connection Form
+        {%endblock%}
+    </title>
+</head>
+<body>
+    {%block content%}
+    <div class=sideMar1>
+    </div>
+    <div class=sideMar2>
+    </div>
+    <div class=centerShad>
+    </div>
+    <center>
+    <h1>Thank you!</h1>
+    <center>
+    <h2>Your submission has been recorded</h2>
+    <img src="{% static 'images/UWO XA Logo (All Black).png'%}" alt=""/>
+    {%endblock%}
+</body>
+</html>
